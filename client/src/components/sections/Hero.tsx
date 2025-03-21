@@ -41,9 +41,15 @@ const Hero = () => {
             </div>
             <div className="mt-8 flex items-center gap-6">
               <div className="flex -space-x-2">
-                <div className="w-10 h-10 rounded-full border-2 border-white dark:border-dark-bg bg-gradient-to-r from-blue-400 to-blue-500 shadow-lg"></div>
-                <div className="w-10 h-10 rounded-full border-2 border-white dark:border-dark-bg bg-gradient-to-r from-purple-400 to-purple-600 shadow-lg"></div>
-                <div className="w-10 h-10 rounded-full border-2 border-white dark:border-dark-bg bg-gradient-to-r from-pink-400 to-pink-600 shadow-lg"></div>
+                <div className="w-10 h-10 rounded-full border-2 border-white dark:border-dark-bg shadow-lg overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" alt="User avatar" className="w-full h-full object-cover" />
+                </div>
+                <div className="w-10 h-10 rounded-full border-2 border-white dark:border-dark-bg shadow-lg overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces" alt="User avatar" className="w-full h-full object-cover" />
+                </div>
+                <div className="w-10 h-10 rounded-full border-2 border-white dark:border-dark-bg shadow-lg overflow-hidden">
+                  <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=100&h=100&fit=crop&crop=faces" alt="User avatar" className="w-full h-full object-cover" />
+                </div>
               </div>
               <div>
                 <div className="flex items-center mb-1">
@@ -74,35 +80,45 @@ const Hero = () => {
                 <div className="pt-20 pb-6 px-6">
                   <div className="chat-container bg-gray-50 dark:bg-gray-900 p-4 rounded-lg mb-4 max-h-80 overflow-y-auto scrollbar-hide">
                     <div className="flex items-start mb-4">
-                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center text-white text-xs font-bold mr-3 shadow-md">AI</div>
+                      <div className="w-8 h-8 rounded-full shadow-md mr-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&fit=crop&crop=faces" alt="AI Assistant" className="w-full h-full object-cover" />
+                      </div>
                       <div className="chat-message bg-white dark:bg-gray-700 shadow-sm self-start rounded-2xl py-2">
                         Hello! I'm your healthcare assistant. How can I help you with your medical concerns today?
                       </div>
                     </div>
                     
                     <div className="flex items-start flex-row-reverse mb-4">
-                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white text-xs font-bold ml-3 shadow-md">You</div>
+                      <div className="w-8 h-8 rounded-full shadow-md ml-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&crop=faces" alt="User" className="w-full h-full object-cover" />
+                      </div>
                       <div className="chat-message bg-primary/90 text-white ml-auto rounded-2xl py-2 shadow-sm">
                         I've been experiencing headaches and mild fever for the past two days. Should I be concerned?
                       </div>
                     </div>
                     
                     <div className="flex items-start mb-4">
-                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center text-white text-xs font-bold mr-3 shadow-md">AI</div>
+                      <div className="w-8 h-8 rounded-full shadow-md mr-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&fit=crop&crop=faces" alt="AI Assistant" className="w-full h-full object-cover" />
+                      </div>
                       <div className="chat-message bg-white dark:bg-gray-700 shadow-sm self-start rounded-2xl py-2">
                         I understand your concern. These symptoms could be due to several causes, from a common cold to more serious conditions. Have you taken any medication for these symptoms?
                       </div>
                     </div>
                     
                     <div className="flex items-start flex-row-reverse mb-4">
-                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white text-xs font-bold ml-3 shadow-md">You</div>
+                      <div className="w-8 h-8 rounded-full shadow-md ml-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&crop=faces" alt="User" className="w-full h-full object-cover" />
+                      </div>
                       <div className="chat-message bg-primary/90 text-white ml-auto rounded-2xl py-2 shadow-sm">
                         I took some over-the-counter pain relievers, but they only help temporarily. Is there a specific medicine you would recommend?
                       </div>
                     </div>
                     
                     <div className="flex items-start mb-4">
-                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center text-white text-xs font-bold mr-3 shadow-md">AI</div>
+                      <div className="w-8 h-8 rounded-full shadow-md mr-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&fit=crop&crop=faces" alt="AI Assistant" className="w-full h-full object-cover" />
+                      </div>
                       <div className="chat-message bg-white dark:bg-gray-700 shadow-sm self-start rounded-2xl py-2">
                         <p className="mb-2">Based on your symptoms, I recommend:</p>
                         <ul className="list-disc pl-5 space-y-1 text-sm">
@@ -116,14 +132,18 @@ const Hero = () => {
                     </div>
                     
                     <div className="flex items-start flex-row-reverse mb-4">
-                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white text-xs font-bold ml-3 shadow-md">You</div>
+                      <div className="w-8 h-8 rounded-full shadow-md ml-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&h=80&fit=crop&crop=faces" alt="User" className="w-full h-full object-cover" />
+                      </div>
                       <div className="chat-message bg-primary/90 text-white ml-auto rounded-2xl py-2 shadow-sm">
                         Thank you. Can I schedule a virtual consultation with a doctor just to be sure?
                       </div>
                     </div>
                     
                     <div className="flex items-start">
-                      <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center text-white text-xs font-bold mr-3 shadow-md">AI</div>
+                      <div className="w-8 h-8 rounded-full shadow-md mr-3 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&fit=crop&crop=faces" alt="AI Assistant" className="w-full h-full object-cover" />
+                      </div>
                       <div className="chat-message bg-white dark:bg-gray-700 shadow-sm self-start rounded-2xl py-2">
                         Absolutely! I can help you schedule a virtual appointment with one of our healthcare professionals. We have availability today and tomorrow. When would be most convenient for you?
                       </div>

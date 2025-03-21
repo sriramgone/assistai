@@ -56,12 +56,23 @@ const Features = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <Reveal key={index} className="bg-white dark:bg-dark-card rounded-xl p-8 shadow-sm hover:shadow-md transition-all">
-              <div className={`w-14 h-14 rounded-full ${feature.bgClass} flex items-center justify-center ${feature.iconClass} mb-6`}>
+            <Reveal 
+              key={index} 
+              className="feature-card bg-white dark:bg-dark-card rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-primary/20"
+              threshold={0.1}
+              triggerOnce={true}
+            >
+              <div className={`w-14 h-14 rounded-full ${feature.bgClass} flex items-center justify-center ${feature.iconClass} mb-6 animate-pulse`}>
                 <i className={`${feature.icon} text-2xl`}></i>
               </div>
               <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
               <p className="text-gray-600 dark:text-gray-300">{feature.description}</p>
+              <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
+                <a href="#" className="text-primary dark:text-primary-light hover:underline inline-flex items-center group">
+                  Learn more 
+                  <i className="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                </a>
+              </div>
             </Reveal>
           ))}
         </div>

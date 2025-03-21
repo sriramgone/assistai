@@ -94,15 +94,18 @@ const Industries = () => {
                 className="carousel-item flex-none w-full sm:w-1/2 lg:w-1/3 h-full"
                 style={{ scrollSnapAlign: 'start' }}
               >
-                <div className="bg-white dark:bg-dark-card rounded-xl overflow-hidden shadow-sm h-full flex flex-col">
-                  <div className="h-48 overflow-hidden">
+                <div className="industry-card bg-white dark:bg-dark-card rounded-xl overflow-hidden shadow-md hover:shadow-xl h-full flex flex-col transition-all duration-300 hover:-translate-y-1 border border-transparent hover:border-primary/20">
+                  <div className="h-48 overflow-hidden relative">
                     <div 
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 bg-cover bg-center"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 bg-cover bg-center animate-fadeIn"
                       style={{ backgroundImage: `url(${industry.imageSrc})` }}
                     ></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-60"></div>
+                    <div className="absolute bottom-0 left-0 p-4 w-full">
+                      <h3 className="text-xl font-bold text-white">{industry.title}</h3>
+                    </div>
                   </div>
                   <div className="p-6 flex-1 flex flex-col">
-                    <h3 className="text-xl font-semibold mb-3">{industry.title}</h3>
                     <p className="text-gray-600 dark:text-gray-300 mb-4 flex-1">{industry.description}</p>
                     <div className="mt-2">
                       {industry.tags.map((tag, tagIndex) => (
@@ -113,6 +116,12 @@ const Industries = () => {
                           {tag}
                         </span>
                       ))}
+                    </div>
+                    <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
+                      <a href="#" className="text-primary dark:text-primary-light hover:underline inline-flex items-center group">
+                        See industry solutions 
+                        <i className="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                      </a>
                     </div>
                   </div>
                 </div>

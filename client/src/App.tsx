@@ -6,6 +6,16 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import { useEffect } from "react";
 
+// Define AOS interface to fix TypeScript errors
+declare global {
+  interface Window {
+    AOS: {
+      init: (options: any) => void;
+      refresh: () => void;
+    };
+  }
+}
+
 function Router() {
   return (
     <Switch>
