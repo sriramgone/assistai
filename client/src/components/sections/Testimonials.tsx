@@ -84,7 +84,7 @@ const Testimonials = () => {
                 className="carousel-item flex-none w-full sm:w-1/2 lg:w-1/3"
                 style={{ scrollSnapAlign: 'start' }}
               >
-                <div className="bg-white dark:bg-dark-card rounded-xl p-8 shadow-sm h-full">
+                <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-sm h-full border border-gray-100 dark:border-gray-700">
                   <div className="flex text-yellow-400 mb-4">
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star"></i>
@@ -110,7 +110,7 @@ const Testimonials = () => {
           {canScrollLeft && (
             <button 
               onClick={scrollLeft}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white dark:bg-dark-card w-10 h-10 rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none z-10 hidden md:flex"
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white dark:bg-gray-800 w-10 h-10 rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white focus:outline-none z-10 hidden md:flex"
               aria-label="Previous testimonial"
             >
               <i className="fas fa-chevron-left"></i>
@@ -120,7 +120,7 @@ const Testimonials = () => {
           {canScrollRight && (
             <button 
               onClick={scrollRight}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white dark:bg-dark-card w-10 h-10 rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none z-10 hidden md:flex"
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white dark:bg-gray-800 w-10 h-10 rounded-full shadow-md flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white focus:outline-none z-10 hidden md:flex"
               aria-label="Next testimonial"
             >
               <i className="fas fa-chevron-right"></i>

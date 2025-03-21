@@ -92,7 +92,7 @@ const Contact = () => {
             </div>
           </Reveal>
           
-          <div className="bg-white dark:bg-dark-card rounded-xl shadow-sm p-8">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-8 border border-gray-100 dark:border-gray-700">
             <Reveal>
               <form id="contact-form" onSubmit={handleSubmit}>
                 <div className="mb-6">
@@ -102,7 +102,7 @@ const Contact = () => {
                     id="name" 
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:bg-dark-bg" 
+                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-700 dark:text-white" 
                     placeholder="John Doe" 
                     required 
                   />
@@ -115,7 +115,7 @@ const Contact = () => {
                     id="email" 
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:bg-dark-bg" 
+                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-700 dark:text-white" 
                     placeholder="john@example.com" 
                     required 
                   />
