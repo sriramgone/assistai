@@ -128,7 +128,7 @@ const Contact = () => {
                     id="company" 
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:bg-dark-bg" 
+                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-700 dark:text-white" 
                     placeholder="Your Company" 
                     required 
                   />
@@ -140,7 +140,7 @@ const Contact = () => {
                     id="industry" 
                     value={formData.industry}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:bg-dark-bg" 
+                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-700 dark:text-white" 
                     required
                   >
                     <option value="" disabled>Select your industry</option>
@@ -159,7 +159,7 @@ const Contact = () => {
                     rows={4} 
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:bg-dark-bg" 
+                    className="w-full px-4 py-3 border border-gray-200 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-700 dark:text-white" 
                     placeholder="Tell us more about your business needs"
                   ></textarea>
                 </div>
