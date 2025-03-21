@@ -59,7 +59,14 @@ app.use((req, res, next) => {
   // Use port 5000 by default, but allow environment override
   // this serves both the API and the client.
   const port = process.env.PORT ? parseInt(process.env.PORT) : 5000;
-  server.listen(port, () => {
-    log(`serving on port ${port}`);
-  });
+  
+  try {
+    // Try with 127.0.0.1 (localhost) instead of 0.0.0.0
+    server.listen(port, '127.0.0.1', () => {
+      log(`serving on http://localhost:${port}`);
+    });
+  } catch (error) {
+    console.error('Failed to start server:', error);
+    process.exit(1);
+  }
 })();

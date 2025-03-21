@@ -10,6 +10,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // e.g. storage.insertUser(user) or storage.getUserByUsername(username)
 
   const httpServer = createServer(app);
-
+  
+  // Log server creation
+  console.log("Created HTTP server");
+  
   return httpServer;
 }
