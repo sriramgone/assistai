@@ -113,8 +113,8 @@ const Demo = () => {
           
           <div className="order-1 lg:order-2">
             <Reveal>
-              <div className="bg-white dark:bg-dark-card rounded-xl shadow-lg overflow-hidden">
-                <div className="p-4 bg-primary text-white flex items-center">
+              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700">
+                <div className="p-4 bg-gradient-to-r from-primary to-primary-dark text-white flex items-center">
                   <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary mr-3">
                     <i className="fas fa-robot"></i>
                   </div>
@@ -122,6 +122,12 @@ const Demo = () => {
                     <h4 className="font-medium">AssistMe.AI Demo</h4>
                     <p className="text-sm opacity-80">Online now</p>
                   </div>
+                </div>
+                <div className="px-4 py-2 bg-yellow-50 dark:bg-yellow-900/20 border-y border-yellow-100 dark:border-yellow-800">
+                  <p className="text-xs text-yellow-800 dark:text-yellow-200">
+                    <i className="fas fa-info-circle mr-1"></i> 
+                    Demo Version: The full product supports custom message input, not just pre-selected questions.
+                  </p>
                 </div>
                 <div 
                   className="chat-container p-4 h-[400px] overflow-y-auto"
@@ -137,7 +143,7 @@ const Demo = () => {
                       className={`chat-message ${
                         message.isUser 
                           ? 'bg-primary text-white ml-auto rounded-tl-xl rounded-tr-xl rounded-bl-xl' 
-                          : 'bg-gray-100 dark:bg-gray-800 self-start rounded-tr-xl rounded-br-xl rounded-bl-xl'
+                          : 'bg-gray-100 dark:bg-gray-700 dark:text-white self-start rounded-tr-xl rounded-br-xl rounded-bl-xl'
                       }`}
                       style={{
                         maxWidth: '80%',
@@ -155,7 +161,7 @@ const Demo = () => {
                     id="demo-question"
                     value={selectedQuestion}
                     onChange={handleQuestionSelect}
-                    className="flex-1 border border-gray-200 dark:border-gray-700 rounded-l-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary dark:bg-dark-card"
+                    className="flex-1 border border-gray-200 dark:border-gray-700 rounded-l-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary dark:bg-gray-700 dark:text-white"
                   >
                     <option value="">Select a question...</option>
                     {demoQuestions.map(question => (

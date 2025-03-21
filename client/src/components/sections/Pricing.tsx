@@ -93,7 +93,7 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <Reveal 
               key={index}
-              className={`bg-white dark:bg-dark-card rounded-xl overflow-hidden ${
+              className={`bg-white dark:bg-gray-800 rounded-xl overflow-hidden border border-gray-100 dark:border-gray-700 ${
                 plan.popular 
                   ? 'shadow-lg relative z-10 transform scale-105' 
                   : 'shadow-sm hover:shadow-md transition-all'

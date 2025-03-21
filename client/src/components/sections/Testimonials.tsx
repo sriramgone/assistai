@@ -6,19 +6,19 @@ const testimonials = [
     quote: "AssistMe.AI has transformed our customer service. We're handling 3x the inquiries with the same team size, and our customers love the instant responses.",
     author: "Sarah Johnson",
     title: "Retail Chain Owner",
-    avatarColor: "bg-blue-400"
+    avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=faces"
   },
   {
     quote: "Our patients appreciate being able to schedule appointments and get basic information any time of day. The AI is remarkably accurate and has reduced our administrative workload significantly.",
     author: "Dr. Michael Chen",
     title: "Healthcare Provider",
-    avatarColor: "bg-green-400"
+    avatar: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=100&h=100&fit=crop&crop=faces"
   },
   {
     quote: "The ROI has been incredible. Our bookings have increased by 40% since implementing AssistMe.AI, and we never miss a reservation request. Worth every penny.",
     author: "Amanda Rodriguez",
     title: "Restaurant Owner",
-    avatarColor: "bg-purple-400"
+    avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=100&h=100&fit=crop&crop=faces"
   }
 ];
 
@@ -94,7 +94,9 @@ const Testimonials = () => {
                   </div>
                   <p className="text-gray-600 dark:text-gray-300 mb-6">{testimonial.quote}</p>
                   <div className="flex items-center">
-                    <div className={`w-12 h-12 rounded-full mr-4 ${testimonial.avatarColor}`}></div>
+                    <div className="w-12 h-12 rounded-full mr-4 overflow-hidden shadow-md">
+                      <img src={testimonial.avatar} alt={testimonial.author} className="w-full h-full object-cover" />
+                    </div>
                     <div>
                       <h4 className="font-medium">{testimonial.author}</h4>
                       <p className="text-sm text-gray-500 dark:text-gray-400">{testimonial.title}</p>
