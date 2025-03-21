@@ -11,3 +11,62 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
+
+/* Custom color variables */
+:root {
+  --primary-rgb: 93, 63, 211;
+  --accent-rgb: 124, 58, 237;
+  --secondary-rgb: 236, 72, 153;
+  
+  /* Light mode colors */
+  --light-bg: #f8f9fc;
+  --light-card: #ffffff;
+  --light-text: #1e293b;
+  --light-border: #e2e8f0;
+  --light-hover: #f1f5f9;
+  
+  /* Dark mode colors */
+  --dark-bg: #0f172a;
+  --dark-card: #1e293b;
+  --dark-text: #f1f5f9;
+  --dark-border: #334155;
+  --dark-hover: #1e293b;
+}
+
+/* Light mode */
+:root {
+  --background: var(--light-bg);
+  --card-bg: var(--light-card);
+  --text-color: var(--light-text);
+  --border-color: var(--light-border);
+  --hover-color: var(--light-hover);
+}
+
+/* Dark mode */
+.dark {
+  --background: var(--dark-bg);
+  --card-bg: var(--dark-card);
+  --text-color: var(--dark-text);
+  --border-color: var(--dark-border);
+  --hover-color: var(--dark-hover);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Enhanced transition effects */
+a, button, .card, .feature-icon, .scale-on-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Gradient text for special highlights */
+.gradient-text {
+  background: linear-gradient(90deg, rgb(var(--primary-rgb)) 0%, rgb(var(--secondary-rgb)) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
