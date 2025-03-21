@@ -76,56 +76,56 @@ const Hero = () => {
                     <div className="flex items-start mb-4">
                       <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center text-white text-xs font-bold mr-3 shadow-md">AI</div>
                       <div className="chat-message bg-white dark:bg-gray-700 shadow-sm self-start rounded-2xl py-2">
-                        Hello! I'm your AI assistant. How can I help you today?
+                        Hello! I'm your healthcare assistant. How can I help you with your medical concerns today?
                       </div>
                     </div>
                     
                     <div className="flex items-start flex-row-reverse mb-4">
                       <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white text-xs font-bold ml-3 shadow-md">You</div>
                       <div className="chat-message bg-primary/90 text-white ml-auto rounded-2xl py-2 shadow-sm">
-                        I'd like to know more about your service packages.
+                        I've been experiencing headaches and mild fever for the past two days. Should I be concerned?
                       </div>
                     </div>
                     
                     <div className="flex items-start mb-4">
                       <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center text-white text-xs font-bold mr-3 shadow-md">AI</div>
                       <div className="chat-message bg-white dark:bg-gray-700 shadow-sm self-start rounded-2xl py-2">
-                        We offer Basic, Advanced, and Enterprise plans. Each includes different levels of support and features. Would you like me to explain the differences?
+                        I understand your concern. These symptoms could be due to several causes, from a common cold to more serious conditions. Have you taken any medication for these symptoms?
                       </div>
                     </div>
                     
                     <div className="flex items-start flex-row-reverse mb-4">
                       <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white text-xs font-bold ml-3 shadow-md">You</div>
                       <div className="chat-message bg-primary/90 text-white ml-auto rounded-2xl py-2 shadow-sm">
-                        Yes, please tell me about the Enterprise plan.
+                        I took some over-the-counter pain relievers, but they only help temporarily. Is there a specific medicine you would recommend?
                       </div>
                     </div>
                     
                     <div className="flex items-start mb-4">
                       <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center text-white text-xs font-bold mr-3 shadow-md">AI</div>
                       <div className="chat-message bg-white dark:bg-gray-700 shadow-sm self-start rounded-2xl py-2">
-                        <p className="mb-2">The Enterprise plan includes:</p>
+                        <p className="mb-2">Based on your symptoms, I recommend:</p>
                         <ul className="list-disc pl-5 space-y-1 text-sm">
-                          <li>24/7 call handling</li>
-                          <li>Multilingual support</li>
-                          <li>Dedicated account management</li>
-                          <li>Advanced analytics dashboard</li>
+                          <li>Staying hydrated with plenty of fluids</li>
+                          <li>Taking acetaminophen or ibuprofen as directed</li>
+                          <li>Getting adequate rest</li>
+                          <li>Monitoring your temperature regularly</li>
                         </ul>
-                        <p className="mt-2">It's perfect for large organizations with high customer interaction volume.</p>
+                        <p className="mt-2">If symptoms persist beyond 3-4 days or if fever exceeds 101°F, please consult with a healthcare provider promptly.</p>
                       </div>
                     </div>
                     
                     <div className="flex items-start flex-row-reverse mb-4">
                       <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center text-white text-xs font-bold ml-3 shadow-md">You</div>
                       <div className="chat-message bg-primary/90 text-white ml-auto rounded-2xl py-2 shadow-sm">
-                        Great! Can I schedule a demo?
+                        Thank you. Can I schedule a virtual consultation with a doctor just to be sure?
                       </div>
                     </div>
                     
                     <div className="flex items-start">
                       <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 flex items-center justify-center text-white text-xs font-bold mr-3 shadow-md">AI</div>
                       <div className="chat-message bg-white dark:bg-gray-700 shadow-sm self-start rounded-2xl py-2">
-                        Absolutely! I can help you schedule a personalized demo with our team. What date works best for you?
+                        Absolutely! I can help you schedule a virtual appointment with one of our healthcare professionals. We have availability today and tomorrow. When would be most convenient for you?
                       </div>
                     </div>
                   </div>
