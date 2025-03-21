@@ -62,7 +62,7 @@ app.use((req, res, next) => {
   
   try {
     // Try with 127.0.0.1 (localhost) instead of 0.0.0.0
-    server.listen(port, '127.0.0.1', () => {
+    server.listen(port, '0.0.0.0', () => {
       log(`serving on http://localhost:${port}`);
     });
   } catch (error) {
